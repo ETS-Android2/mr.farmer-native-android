@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/cartitemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Murukku - 200gms"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:fontFamily="@font/gothic"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/cartitemprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cartitemname"
+        android:text="200INR"
+        android:padding="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:fontFamily="@font/gothic"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/cartdlt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cartitemname"
+        android:padding="5dp"
+        android:src="@drawable/share"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

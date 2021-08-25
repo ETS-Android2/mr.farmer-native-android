@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homefragment">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.snag.ink.user.activity.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/homefragment"
+        android:name="com.snag.ink.user.fragment.Homefragment"
+        android:label="Homefragment">
+        <action
+            android:id="@+id/action_homefragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/randomfragment"
+        android:name="com.snag.ink.user.fragment.Randomfragment"
+        android:label="Randomfragment">
+        <action
+            android:id="@+id/action_randomfragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountfragment"
+        android:name="com.snag.ink.user.fragment.Accountfragment"
+        android:label="Accountfragment">
+        <action
+            android:id="@+id/action_accountfragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/merchantitemFragment"
+        android:name="com.snag.ink.user.fragment.MerchantitemFragment"
+        android:label="fragment_merchantitem"
+        tools:layout="@layout/fragment_merchantitem">
+        <action
+            android:id="@+id/action_merchantitemFragment_to_homefragment2"
+            app:destination="@id/homefragment" />
+    </fragment>
+</navigation>

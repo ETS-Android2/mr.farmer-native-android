@@ -1,0 +1,73 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/itemimage"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:src="@drawable/snackbox" />
+
+    <TextView
+        android:id="@+id/itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:text="Kaju Katli"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:fontFamily="@font/gothic"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/itemprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/round_btn"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:text="200"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:fontFamily="@font/gothic" />
+
+    <TextView
+        android:id="@+id/itemquantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:text="200gms"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:fontFamily="@font/gothic" />
+
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:id="@+id/item_counter"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:backGroundColor="#7153F2"
+        app:finalNumber="5"
+        app:initialNumber="0" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

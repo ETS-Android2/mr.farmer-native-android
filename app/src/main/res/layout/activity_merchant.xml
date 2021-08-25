@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.MerchantActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_tool"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:text="IduNammaKadai"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_marginStart="15dp"/>
+
+        <ImageView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/account"
+            android:layout_alignParentEnd="true"
+            android:padding="15dp"/>
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:id="@+id/agent_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rel_tool"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:text="Orders taken only between 9AM to 5PM"
+        android:layout_below="@+id/agent_view"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"/>
+
+    <ImageView
+        android:id="@+id/adimage"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/time"
+        android:visibility="visible"
+        android:src="@color/grey"
+        android:scaleType="centerCrop"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/merchant_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/viewcart_btn"
+        android:layout_below="@+id/adimage"
+        android:splitMotionEvents="false"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/merchant_item"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/viewcart_btn"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="#7153F2"
+        android:text="View Cart"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+</RelativeLayout>

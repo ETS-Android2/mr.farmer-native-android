@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Additemactivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/itemimageview"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"/>
+
+    <TextView
+        android:id="@+id/itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemimageview"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Keerai"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/gothic"/>
+
+    <TextView
+        android:id="@+id/itemquantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemname"
+        android:text="100gms"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/gothic"/>
+
+
+    <TextView
+        android:id="@+id/itemprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemquantity"
+        android:text="Inr 500"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:background="@drawable/round_btn"
+        android:layout_marginStart="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="@font/gothic"/>
+
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:id="@+id/item_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemprice"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        app:backGroundColor="#ffffff"
+        app:finalNumber="5"
+        app:initialNumber="0"
+        app:textColor="@color/black"
+        app:textSize="7sp"/>
+
+    <TextView
+        android:id="@+id/itemdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_counter"
+        android:text="Description:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:padding="5dp"
+        android:layout_marginStart="10dp"
+        android:textAlignment="viewStart"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/gothic"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/viewcart"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"
+        android:text="View Cart"
+        android:textAllCaps="false"
+        android:background="#99cc99"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:fontFamily="@font/gothic"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

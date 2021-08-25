@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/merchantimage"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:src="@drawable/snackbox"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/merchantname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Paramesh Stores"
+        android:maxLines="1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:maxLength="10"
+        android:ellipsize="end"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/merchantdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Snacks &amp; Sweets"
+        android:maxLines="2"
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:ellipsize="end"
+        android:maxLength="15"
+        android:gravity="center"/>
+
+</LinearLayout>

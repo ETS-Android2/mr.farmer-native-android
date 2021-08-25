@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">INK</string>
+    <string name="Agree"><a href="https://sites.google.com/view/chatbed/home">By Signing In you agree to our\nTerms and privacy policy</a></string>
+    <string name="update">Does this popup annoy u? Please update App then.😁</string>
+    <string name="Delivery_location">We Only deliver to certain locations in Trichy.</string>
+    <string name="Rs">\u20B9</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="clear_cart">Cannot add items from different merchants. Would you like to replace cart with new items</string>
+    <string name="callcentre"> 9944539999 ( Whatsapp )  </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="mapclick">Click on Map to select location</string>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:id="@+id/order_llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/Merchant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Parameshwari"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:fontFamily="@font/gothic"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/Order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Confirmed"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:fontFamily="@font/gothic"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Orderslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_llayout"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:fontFamily="@font/gothic" />
+
+    <LinearLayout
+        android:id="@+id/Order_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Orderslist"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/Order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="22 Mar"
+            android:textSize="12sp"
+            android:maxLength="20"
+            android:fontFamily="@font/gothic"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/Order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Rs 450"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:fontFamily="@font/gothic"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/Order_details"
+        android:background="@color/grey"
+        android:layout_marginTop="5dp"/>
+
+
+</RelativeLayout>
